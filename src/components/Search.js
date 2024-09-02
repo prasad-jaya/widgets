@@ -28,10 +28,9 @@ const Search = () =>{
                 search();
             }, 500);
         
-       return () =>{
+       return (() =>{
         clearInterval(timeoutId);
-        console.log('cleande UP');
-       };
+       });
     }, [term]);
 
     const renderdResults = results.map((result) => {
